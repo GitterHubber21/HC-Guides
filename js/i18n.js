@@ -5,7 +5,7 @@ const translations = {
         "other-resources-intro": "Here you can find additional links to help you on your journey with Hack Club."
     },
     hu: {
-        "website-title": "Üdvözlünk a Deák Téri Hack Club Guide Oldalán",
+        "website-title": "Üdvözlünk a Deák Téri Hack Club Guides Oldalán",
         "other-resources-title": "Egyéb Források",
         "other-resources-intro": "Itt további linkeket találsz, amelyek segítenek az utadon a Hack Clubbal."
     }
