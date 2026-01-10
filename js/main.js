@@ -17,6 +17,11 @@ function initApp() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                const cleanupDelay = () => {
+                   entry.target.style.transitionDelay = '0s';
+                };
+                entry.target.addEventListener('transitionend', cleanupDelay, { once: true });
+
                 observer.unobserve(entry.target);
             }
         });

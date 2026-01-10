@@ -195,6 +195,7 @@ html[data-initial-lang="en"] .lang-toggle-container:not([data-active-lang]) #lan
 .tile:nth-child(6) { transition-delay: 0.6s; }
 
 .tile.visible:hover {
+    transition-delay: 0s;
     transform: translateY(-3px);
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
