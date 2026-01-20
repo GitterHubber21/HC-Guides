@@ -1,35 +1,59 @@
-Go to hackatime.hackclub.com
+# Hackatime Setup Guide
 
-Click the Sign in with your Hack Club account button
-![alt text](<hackatime/onboard.png>)
-Click Authorize
-![alt text](<hackatime/authorize.png>)
+## Step 1: Sign In
 
-After copy the command and paste it in your terminal 
-After you will be promted to setup Hackatime 
-Run the command displayed on your webpage.
-![alt text](<hackatime/command.png>) 
+1. Go to [hackatime.hackclub.com](https://hackatime.hackclub.com)
+2. Click the **Sign in with your Hack Club account** button
 
-Once the website lets you proceed, go to the second setup step
-Click your used editor. This tutorial will show the process with VS Code.
-![alt text](<hackatime/editor.png>) 
-After you should download the Wakatime extension for your selected Editor. 
+![Sign in page](<hackatime/onboard.png>)
 
-![alt text](<hackatime/extension.png>) 
-### Extension download
-Open you editor, in my case VS Code. In your tool bar find the Extensions icon.
+3. Click **Authorize** to grant permissions
 
-![alt text](<hackatime/sidebar.png>) 
+![Authorization page](<hackatime/authorize.png>)
 
-Click it and then search for "wakatime" in the search bar.
-![alt text](<hackatime/search.png>) 
-Then click on the first result and click install.
-![alt text](<hackatime/wakatime.png>) 
-Code for a few minutes. You should see a timer on the bottom toolbar. 
+## Step 2: Terminal Setup
 
-After that go back to the Hackatime website and proceed to the next step.
+1. Copy the command displayed on your webpage
+2. Paste it into your terminal and run it
+3. Go back to the Hackatime webpage
 
-![alt text](<hackatime/terms.png>) 
-Check the I agree and I understand the rules box and then Press the Done button.
+![Terminal command](<hackatime/command.png>)
 
-Congrats you've successfully set up Hakatime.
+## Step 3: Editor Selection
+
+1. Once the website lets you proceed, go to the second setup step
+2. Select your editor (this tutorial uses VS Code as an example)
+
+![Editor selection](<hackatime/editor.png>)
+
+
+## Step 4: Installing the WakaTime Extension
+
+Download the WakaTime extension for your selected editor
+
+![Extension download prompt](<hackatime/extension.png>)
+
+1. Open your editor (VS Code in this example)
+2. Find and click the **Extensions** icon in the sidebar
+
+![Extensions sidebar](<hackatime/sidebar.png>)
+
+3. Search for "wakatime" in the search bar
+
+![Search for WakaTime](<hackatime/search.png>)
+
+4. Click on the first result and click **Install**
+
+![WakaTime extension](<hackatime/wakatime.png>)
+
+5. Start coding! After a few minutes, you should see a timer appear on the bottom toolbar
+
+## Step 5: Complete Setup
+
+1. Go back to the Hackatime website and proceed to the next step
+2. Check the **I agree I understand the rules** box
+3. Click the **Done** button
+
+![Terms and conditions](<hackatime/terms.png>)
+
+**Congratulations!** You've successfully set up Hackatime and can now start tracking your coding time.

@@ -1,26 +1,63 @@
-Go to auth.hackclub.com
-Write your email in the textbox 
-![alt text](<onboard.png>) 
-Note: Use an email you can access since you will get an authentication code via email 
-After that you will be promted to fill in your personal information 
-![alt text](<personal-details.png>) 
-Note: Don't fake it because you'll need them for the ID verification 
-After you submit Hack Club will send you a verification code via email, paste that into the textbox 
-![alt text](<verif-code.png>) 
-After that you will be redirected to the HC Slack page, click I Agree 
-![alt text](<slack-terms.png>) 
-And with that you have a HC Auth account as well as a Slack profile 
-You will see a DM from Ralsei, read the message and clikc the green okay! button 
+# Hack Club Auth Setup Guide
 
-![alt text](<hc-terms1.png>) 
+## Step 1: Create Your Account
 
-After click hack yeah! 
+1. Go to [auth.hackclub.com](https://auth.hackclub.com)
+2. Enter your email address in the textbox
 
-![alt text](<hc-terms2.png>) 
+![Email entry page](<auth/onboard.png>)
 
-Then you will be promted to reload and that's it, you're now a member of the community
-Now go back to auth.hackclub.com 
-You'll see three steps that need to be completed for your verified profile on the top of the page. Complete all three of them in order to be able to participate in YSWSs.
-![alt text](auth/acc-complete.png)
-Note: It is very important to use your own, real information
-Go to the Slack tutorial for further information about using the platform.
+> **Note:** Use an email you can access, as you'll receive an authentication code via email.
+
+## Step 2: Personal Information
+
+1. Fill in your personal information **accurately** and press **Continue**
+
+![Personal details form](<auth/personal-details.png>)
+
+> **Important:** Use your real information, as it will be needed for ID verification.
+
+## Step 3: Email Verification
+
+1. Check your email for the verification code from Hack Club
+2. Paste the code into the textbox on the website and press **Verify**
+
+![Verification code entry](<auth/verif-code.png>)
+
+## Step 4: Join Slack
+
+1. You'll be redirected to the Hack Club Slack page
+2. Click **I Agree** to accept the terms
+
+![Slack terms and conditions](<auth/slack-terms.png>)
+
+Congratulations! You now have both a Hack Club Auth account and a Slack profile.
+
+## Step 5: Welcome Messages
+
+1. You'll receive a DM from Ralsei in Slack
+2. Read the message and click the green **okay!** button
+
+![First welcome message](<auth/hc-terms1.png>)
+
+3. Click **hack yeah!** to continue
+
+![Second welcome message](<auth/hc-terms2.png>)
+
+4. You'll be prompted to reload the page
+
+**Welcome to the community!** You're now officially a member of Hack Club.
+
+## Step 6: Complete Your Profile
+
+1. Go back to [auth.hackclub.com](https://auth.hackclub.com)
+2. You'll see three steps at the top of the page that need to be completed
+3. Complete all three steps to verify your profile
+
+![Account completion steps](auth/acc-complete.png)
+
+> **Important:** Use your own, real information for verification. This is required to participate in YSWSs.
+
+## Next Steps
+
+Check out the Slack tutorial for more information about using the platform and getting involved in the community!
