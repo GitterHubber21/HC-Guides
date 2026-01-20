@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/guides.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         const savedLang = localStorage.getItem('preferredLanguage') || 'en';
         document.documentElement.setAttribute('data-initial-lang', savedLang);
@@ -43,30 +42,75 @@
                 <li><a href="/other-resources">Other Resources</a></li>
             </ul>
         </nav>
-        <main class="content" id="markdown-content">
-            <p>Loading guide...</p>
+        <main class="content">
+            <h1>Hack Club Auth Setup Guide</h1>
+
+            <h2>Step 1: Create Your Account</h2>
+            <ol>
+                <li>Go to <a href="https://auth.hackclub.com">auth.hackclub.com</a></li>
+                <li>Enter your email address in the textbox</li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/onboard.png" alt="Email entry page"></p>
+            <blockquote>
+                <p><strong>Note:</strong> Use an email you can access, as you'll receive an authentication code via email.</p>
+            </blockquote>
+
+            <h2>Step 2: Personal Information</h2>
+            <ol>
+                <li>Fill in your personal information <strong>accurately</strong> and press <strong>Continue</strong></li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/personal-details.png" alt="Personal details form"></p>
+            <blockquote>
+                <p><strong>Important:</strong> Use your real information, as it will be needed for ID verification.</p>
+            </blockquote>
+
+            <h2>Step 3: Email Verification</h2>
+            <ol>
+                <li>Check your email for the verification code from Hack Club</li>
+                <li>Paste the code into the textbox on the website and press <strong>Verify</strong></li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/verif-code.png" alt="Verification code entry"></p>
+
+            <h2>Step 4: Join Slack</h2>
+            <ol>
+                <li>You'll be redirected to the Hack Club Slack page</li>
+                <li>Click <strong>I Agree</strong> to accept the terms</li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/slack-terms.png" alt="Slack terms and conditions"></p>
+            <p>Congratulations! You now have both a Hack Club Auth account and a Slack profile.</p>
+
+            <h2>Step 5: Welcome Messages</h2>
+            <ol>
+                <li>You'll receive a DM from Ralsei in Slack</li>
+                <li>Read the message and click the green <strong>okay!</strong> button</li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/hc-terms1.png" alt="First welcome message"></p>
+            <ol start="3">
+                <li>Click <strong>hack yeah!</strong> to continue</li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/hc-terms2.png" alt="Second welcome message"></p>
+            <ol start="4">
+                <li>You'll be prompted to reload the page</li>
+            </ol>
+            <p><strong>Welcome to the community!</strong> You're now officially a member of Hack Club.</p>
+
+            <h2>Step 6: Complete Your Profile</h2>
+            <ol>
+                <li>Go back to <a href="https://auth.hackclub.com">auth.hackclub.com</a></li>
+                <li>You'll see three steps at the top of the page that need to be completed</li>
+                <li>Complete all three steps to verify your profile</li>
+            </ol>
+            <p><img src="/assets/guides_md/auth/acc-complete.png" alt="Account completion steps"></p>
+            <blockquote>
+                <p><strong>Important:</strong> Use your own, real information for verification. This is required to participate in YSWSs.</p>
+            </blockquote>
+
+            <h2>Next Steps</h2>
+            <p>Check out the Slack tutorial for more information about using the platform and getting involved in the community!</p>
         </main>
     </div>
 
     <script src="/js/i18n.js"></script>
     <script src="/js/main.js"></script>
-    <script>
-        
-        fetch('/assets/guides_md/hc-auth.md')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.text();
-            })
-            .then(markdown => {
-                const content = document.getElementById('markdown-content');
-                content.innerHTML = marked.parse(markdown);
-            })
-            .catch(error => {
-                console.error('Error loading markdown:', error);
-                document.getElementById('markdown-content').innerHTML = '<p>Error loading guide content: ' + error.message + '</p>';
-            });
-    </script>
 </body>
 </html>
