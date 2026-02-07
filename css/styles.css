@@ -323,3 +323,8 @@ html[data-initial-lang="en"] .lang-toggle-container:not([data-active-lang]) #lan
         grid-template-columns: 1fr;
     }
 }
+
+html[lang='en'] .lang-hu,
+html[lang='hu'] .lang-en {
+    display: none !important;
+}
