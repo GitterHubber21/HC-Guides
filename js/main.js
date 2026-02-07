@@ -92,11 +92,12 @@ async function handleRoute(path) {
     let fileToFetch;
     
     if (path.startsWith('/')) path = path.substring(1);
+    if (path.endsWith('/')) path = path.slice(0, -1);
     
     if (path === '' || path === 'index.html') {
         fileToFetch = 'index.html';
     } else {
-        fileToFetch = `guides/${path}.html`;
+        fileToFetch = `${path}/index.html`;
     }
 
     try {
@@ -123,15 +124,7 @@ async function handleRoute(path) {
         });
         
        
-        if (fileToFetch.startsWith('guides/')) {
-            doc.querySelectorAll('[src], [href]').forEach(el => {
-                const src = el.getAttribute('src');
-                const href = el.getAttribute('href');
-                
-                if (src && src.startsWith('../')) el.setAttribute('src', src.substring(3));
-                if (href && href.startsWith('../')) el.setAttribute('href', href.substring(3));
-            });
-        }
+
         
         
         const newLinks = Array.from(doc.querySelectorAll('link[rel="stylesheet"]'));
@@ -174,7 +167,10 @@ async function handleRoute(path) {
 
 document.addEventListener('DOMContentLoaded', () => {
     initApp();
-    
+    if (location.pathname !== '/' && location.pathname.endsWith('/')) {
+        const cleanPath = location.pathname.replace(/\/$/, '');
+        history.replaceState({}, '', cleanPath);
+    }
     
     document.addEventListener('click', (e) => {
         const link = e.target.closest('a');
@@ -182,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const href = link.getAttribute('href');
             if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('mailto:')) {
                 e.preventDefault();
-                const targetUrl = href === '/' ? '/' : href;
+                let targetUrl = href === '/' ? '/' : href.replace(/\/$/, '');
                 history.pushState({}, '', targetUrl);
                 
                 const path = href === '/' ? '' : href;
@@ -193,7 +189,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('popstate', () => {
-    handleRoute(location.pathname);
+    let path = location.pathname;
+    if (path !== '/' && path.endsWith('/')) {
+        const cleanPath = path.replace(/\/$/, '');
+        history.replaceState({}, '', cleanPath);
+        path = cleanPath;
+    }
+    handleRoute(path);
 });
 
 window.equalizeTileHeights = function() {
