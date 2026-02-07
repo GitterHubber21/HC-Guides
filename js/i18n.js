@@ -14,7 +14,6 @@ const translations = {
         "hc-auth-intro": "Minden tagnak szükséges egy HC Auth fiók. Itt megtanulhatod a regisztráció menetét és a profil testreszabását.",
         "hackatime-intro": "A Hackatime majdnem minden YSWS alapja. Ebben a részben megtalálsz minden szükséges tudnivalót az extension használatához.",
         "github-education-intro": "A GitHub Education egy fantasztikus erőforráscsomag fiatal fejlesztők számára. Itt megtudhatod, hogyan igényelhetsz ingyenes hozzáférést a Hack Club tagjaként.",
-        "other-resources-intro": "További erőforrások, amelyek segítenek az utadon a Hack Clubbal."
     }
 };
 
